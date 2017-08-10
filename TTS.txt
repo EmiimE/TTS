@@ -1,2 +1,66 @@
-This is my first test
-May be second
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Java Script Iman</title>
+	
+		
+		<script type="text/javascript">
+			
+		/*
+		// 1. Create the button
+		var button = document.createElement("button");
+		button.innerHTML = "Do Something";
+
+		// 2. Append somewhere
+		var body = document.getElementsByTagName("body")[0];
+		body.appendChild(button);
+
+		// 3. Add event handler
+		button.addEventListener ("click", function() {
+		  alert("did something");
+		});
+		*/	
+
+
+			function readentries()
+			{
+				var txtinput1 = document.getElementById('txtinput1').value	
+				var txtinput2 = document.getElementById('txtinput2').value
+				var txtinput3 = document.getElementById('txtinput3').value
+				
+				var rolelist = document.getElementById('roleList');
+				//document.getElementById('roleList').value=rolelist.options[rolelist.selectedIndex].text;
+				
+				alert("First name: " + txtinput1 + " Last name: " + txtinput2 + " Email address: " + txtinput3 + " Role: " + roleList.options[rolelist.selectedIndex].text + roleList.options[rolelist.selectedIndex].index );
+				//alert("Role: " + );
+			}
+		</script>	
+	</head>
+	<body>
+		
+		<p>Enter the first name</p>
+		<input type="text" id="txtinput1">
+		<p>Enter the last name</p>
+		<input type="text" id="txtinput2">
+		<p>Enter the email address</p>
+		<input type="text" id="txtinput3">
+		<p>Select the role</p>
+		<select id="roleList">
+			<option>Supervisor</option>
+			<option>Assigner</option>
+			<option>Tester</option>
+		</select>
+		
+		<input type="button" value="READ" onclick="readentries()">
+		
+		
+		
+		
+
+		
+		
+		
+	
+	</body>
+</html>
+
